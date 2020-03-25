@@ -1,0 +1,101 @@
+<?xml version="1.0"?>
+<ModuleObject xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" fVersion="1.1" type="Script" mclass="Module" useSupports="false">
+  <Name>Uptime</Name>
+  <Version>0.1.2.0</Version>
+  <Description>Provides system uptime information for Windows PowerShell 5 and below.</Description>
+  <HasManifest>true</HasManifest>
+  <OverridePostCount>false</OverridePostCount>
+  <FetchPostCount xsi:nil="true" />
+  <Cmdlets>
+    <CmdletObject verb="Get" noun="Uptime">
+      <Name>Get-Uptime</Name>
+      <Syntax>
+        <string>Get-Uptime [-Since] [-WhatIf] [-Confirm]</string>
+      </Syntax>
+      <GeneralHelp>
+        <Synopsis>Get the [b]TimeSpan[/b] since last boot.</Synopsis>
+        <Description>This cmdlet returns the time elapsed since the last boot of the operating system.
+
+The Get-Uptime cmdlet was introduced in PowerShell 6.0.</Description>
+        <Notes>On Windows, the value returned is the same as the [b]LastBootUpTime[/b] property of the [b]Win32_OperatingSystem[/b] class in WMI.</Notes>
+        <InputType />
+        <InputUrl />
+        <InputTypeDescription />
+        <ReturnType>System.TimeSpan;System.DateTime</ReturnType>
+        <ReturnUrl />
+        <ReturnTypeDescription>This is the default return type when no parameters are used.;This type is returned when using the [b]Since[/b] parameter.</ReturnTypeDescription>
+      </GeneralHelp>
+      <ParamSets>
+        <CommandParameterSetInfo2 Name="__AllParameterSets" Params="Since Verbose Debug ErrorAction WarningAction InformationAction ErrorVariable WarningVariable InformationVariable OutVariable OutBuffer PipelineVariable WhatIf Confirm" />
+      </ParamSets>
+      <Parameters>
+        <ParameterDescription type="SwitchParameter" varLen="false" required="false" dynamic="false" pipeRemaining="false" pipe="false" pipeProp="false" isPos="false" pos="named" globbing="false">
+          <Name>Since</Name>
+          <Attributes>
+            <string>System.Management.Automation.ParameterAttribute</string>
+            <string>System.Management.Automation.ArgumentTypeConverterAttribute</string>
+          </Attributes>
+          <Aliases />
+          <Description>Cause the cmdlet to return a DateTime object representing the last time that the operating system was booted.</Description>
+          <DefaultValue />
+        </ParameterDescription>
+        <ParameterDescription type="SwitchParameter" varLen="false" required="false" dynamic="false" pipeRemaining="false" pipe="false" pipeProp="false" isPos="false" pos="named" globbing="false">
+          <Name>WhatIf</Name>
+          <Attributes>
+            <string>System.Management.Automation.ParameterAttribute</string>
+            <string>System.Management.Automation.AliasAttribute</string>
+          </Attributes>
+          <Aliases>
+            <string>wi</string>
+          </Aliases>
+          <Description />
+          <DefaultValue />
+        </ParameterDescription>
+        <ParameterDescription type="SwitchParameter" varLen="false" required="false" dynamic="false" pipeRemaining="false" pipe="false" pipeProp="false" isPos="false" pos="named" globbing="false">
+          <Name>Confirm</Name>
+          <Attributes>
+            <string>System.Management.Automation.ParameterAttribute</string>
+            <string>System.Management.Automation.AliasAttribute</string>
+          </Attributes>
+          <Aliases>
+            <string>cf</string>
+          </Aliases>
+          <Description />
+          <DefaultValue />
+        </ParameterDescription>
+      </Parameters>
+      <Examples>
+        <Example>
+          <Name>-------------------------- EXAMPLE 1 --------------------------</Name>
+          <Cmd>Get-Uptime</Cmd>
+          <Description>Show time since last boot.</Description>
+          <Output>Days              : 9
+Hours             : 0
+Minutes           : 9
+Seconds           : 45
+Milliseconds      : 0
+Ticks             : 7781850000000
+TotalDays         : 9.00677083333333
+TotalHours        : 216.1625
+TotalMinutes      : 12969.75
+TotalSeconds      : 778185
+TotalMilliseconds : 778185000</Output>
+        </Example>
+        <Example>
+          <Name>-------------------------- EXAMPLE 2 --------------------------</Name>
+          <Cmd>Get-Uptime -Since</Cmd>
+          <Description>Show the time of the last boot.</Description>
+          <Output>Tuesday, June 18, 2019 2:34:56 PM</Output>
+        </Example>
+      </Examples>
+      <RelatedLinks>
+        <RelatedLink>
+          <LinkText>Win32_OperatingSystem</LinkText>
+          <LinkUrl>https://docs.microsoft.com/en-us/windows/win32/cimwin32prov/win32-operatingsystem</LinkUrl>
+        </RelatedLink>
+      </RelatedLinks>
+      <SupportInformation ad="false" rsat="false" ps2="false" ps3="false" ps4="false" ps5="false" ps51="false" ps60="false" ps61="false" wxp="false" wv="false" w7="false" w8="false" w81="false" w10="false" w2k3s="false" w2k3e="false" w2k3d="false" w2k8s="false" w2k8e="false" w2k8d="false" w2k8r2s="false" w2k8r2e="false" w2k8r2d="false" w2k12s="false" w2k12d="false" w2k12r2s="false" w2k12r2d="false" w2k16s="false" w2k16d="false" />
+      <Publish>false</Publish>
+    </CmdletObject>
+  </Cmdlets>
+</ModuleObject>

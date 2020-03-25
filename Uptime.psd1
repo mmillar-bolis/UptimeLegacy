@@ -7,7 +7,7 @@
 # http://www.bolis.com
 #
 # License:
-# The MIT License (MIT, Expat)
+# The MIT License
 #
 # Copyright (c) 2020, The Bolis Group
 #
@@ -18,7 +18,7 @@
 ModuleToProcess = 'Uptime.psm1'
 
 # Version number of this module.
-ModuleVersion = '0.1.1.0'
+ModuleVersion = '0.1.2.0'
 
 # ID used to uniquely identify this module
 GUID = '1e8d8f97-bbd4-466b-82f5-213fe3cffbfb'

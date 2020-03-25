@@ -1,7 +1,7 @@
 # Microsoft Windows Powershell Script
 #
 # Name: Uptime
-# Version: 0.1.1.0
+# Version: 0.1.2.0
 # Date: 2020-03-24
 # Author: MMillar
 # https://github.com/mmillar-bolis
@@ -22,7 +22,7 @@
 # legacy status of this module, in case it clobbers over the built-in.
 #
 
-#
+#.ExternalHelp Uptime.psm1-Help.xml
 function Get-Uptime {
 	[CmdletBinding(
 		SupportsShouldProcess=$true
