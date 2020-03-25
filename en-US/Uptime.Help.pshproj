@@ -66,7 +66,7 @@ The Get-Uptime cmdlet was introduced in PowerShell 6.0.</Description>
       </Parameters>
       <Examples>
         <Example>
-          <Name>-------------------------- EXAMPLE 1 --------------------------</Name>
+          <Name>EXAMPLE 1</Name>
           <Cmd>Get-Uptime</Cmd>
           <Description>Show time since last boot.</Description>
           <Output>Days              : 9
@@ -82,7 +82,7 @@ TotalSeconds      : 778185
 TotalMilliseconds : 778185000</Output>
         </Example>
         <Example>
-          <Name>-------------------------- EXAMPLE 2 --------------------------</Name>
+          <Name>EXAMPLE 2</Name>
           <Cmd>Get-Uptime -Since</Cmd>
           <Description>Show the time of the last boot.</Description>
           <Output>Tuesday, June 18, 2019 2:34:56 PM</Output>
