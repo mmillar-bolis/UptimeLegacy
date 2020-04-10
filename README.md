@@ -39,7 +39,7 @@ Get-Uptime -Since
 Tuesday, June 18, 2019 2:34:56 PM
 ```
 
-This will reate a symbolic link to test.exe in the $env:USERPROFILE\bin folder. Note that $env:USERPROFILE is evaluated in the context of the caller process.
+This will display the date and time that the system was booted.
 
 ### Thanks for looking!
 
